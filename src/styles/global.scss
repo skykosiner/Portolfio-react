@@ -1,0 +1,27 @@
+@import "_Color.scss";
+// Global link styles
+.global-link{
+    text-decoration: none;
+    color: $white;
+}
+// For global underline
+.global-underline{
+    display:inline-block;
+    position:relative;
+ }
+     .global-underline::after{
+        content:'';
+        position:absolute;
+        width:100%;
+        transform:scaleX(0);
+        height:5px;
+        bottom:0;
+        left:0;
+        background-color: $blue;
+        transform-origin:bottom left;
+        transition:transform 0.25s ease-out;
+    }
+     .global-underline:hover::after{
+        transform:scaleX(1);
+        transform-origin:bottom display;
+    }
