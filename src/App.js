@@ -1,12 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.scss';
-import Footer from './Footer.js';
+import './styles/App.scss';
+import Footer from './Components/Footer.js';
 
 function App() {
   return (
-    <div className="app">
-      <p className="hello-there">hello world</p>
+    <div>
+      <h1 className="title">Blog</h1>
       <Footer />
     </div>
   );

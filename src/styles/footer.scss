@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer{
+  font-family: "Roboto", sans-serif;
+  font: 15px;
+  position: absolute;
+  height: 60px;
+  bottom: -3%;
+  background-color: #3B3B3B;
+  width: 100%;
+  color: #ffffff;
+  &_.copy{
+    margin: 5px;
+    position: absolute;
+    left: 0;
+  }
+  &_.links-main{
+    float: right;
+    margin: 5px;
+  }
+  &_.link{
+    float: right;
+    margin: 5px;
