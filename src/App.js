@@ -5,6 +5,8 @@ import './styles/App.scss';
 import logo from './images/Logo.svg';
 // Menu
 import menu from './Components/menu.js';
+// Menu scss
+import './styles/menu.scss';
 // Social icons
 import instagram from './images/instagram.svg';
 import twitter from './images/twitter.svg';

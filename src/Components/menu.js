@@ -7,9 +7,9 @@ const menu = () => {
                 <div className="hamburger-menu"></div>
             </div>
             <div className="inside">
-                <link>Home</link>
-                <link>About</link>
-                <link>Home automation</link>
+                <a>Home</a>
+                <a>About me</a>
+                <a>Home automation </a>
             </div>
         </div>
     )
