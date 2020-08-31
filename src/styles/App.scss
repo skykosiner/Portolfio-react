@@ -11,12 +11,13 @@
 }
 //  Title
 .hello {
-  color: $light-grey;
+  color: $light-grey; 
   font-size: 30px;
   font-family: "Roboto", sans-serif;
   position: absolute;
   margin: 38px;
   bottom: 58%;
+  cursor: default;
 }
 
 .list {
@@ -26,4 +27,40 @@
   position: absolute;
   margin: 35px;
   bottom: 53%;
+  cursor: default;
+}
+// Image of me
+.me {
+  top: 11%;
+  right: 0;
+  margin-right: 18%;
+  height: 729px;
+  width: 450px;
+  right: -15%;
+  position: absolute;
+}
+// Social
+.image {
+  margin: 50px;
+  position: absolute;
+  left: -1.4%;
+  bottom: 47%;
+}
+.image1 {
+  margin: 50px;
+  position: absolute;
+  left: 3.5%;
+  bottom: 47%;
+}
+.image2 {
+  margin: 50px;
+  position: absolute;
+  left: 9.5%;
+  bottom: 47.1%;
+}
+.image3 {
+  margin: 50px;
+  position: absolute;
+  left: 15.5%;
+  bottom: 47.1%;
 }
