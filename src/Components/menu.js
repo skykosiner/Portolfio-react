@@ -1,6 +1,6 @@
 import React from 'react';
 
-const menu = () => {
+const Menu = () => {
     return (
         <div className="app">
             <div className="menu-wrapper">
@@ -15,4 +15,4 @@ const menu = () => {
     )
 }
 
-export default menu;
+export default Menu;

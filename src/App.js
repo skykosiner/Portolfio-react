@@ -4,7 +4,7 @@ import './styles/App.scss';
 // Logo
 import logo from './images/Logo.svg';
 // Menu
-import menu from './Components/menu.js';
+import Menu from './Components/menu.js';
 // Menu scss
 import './styles/menu.scss';
 // Social icons
@@ -22,7 +22,7 @@ import './styles/footer.scss';
 function App() {
   return (
     <div className="app">
-      <menu />
+      <Menu />
       {/* Logo */}
       <img className="logo" src={logo} width="139px" height="116px"></img>
       {/* Image of me */}
