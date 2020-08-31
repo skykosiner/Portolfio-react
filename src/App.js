@@ -8,9 +8,8 @@ import './styles/footer.scss';
 
 function App() {
   return (
-    <div>
-      <h1 className="title">Blog</h1>
-      <Footer />
+    <div className="ap">
+      <h1 className="title">Welcome</h1>
     </div>
   );
 }
