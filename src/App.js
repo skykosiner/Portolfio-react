@@ -1,10 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { Component } from 'react';
 import './styles/App.scss';
 // Logo
 import logo from './images/Logo.svg';
 // Menu
-import Menu from './Components/menu.js';
+import menu from './Components/menu.js';
 // Menu scss
 import './styles/menu.scss';
 // Social icons
@@ -22,7 +21,7 @@ import './styles/footer.scss';
 function App() {
   return (
     <div className="app">
-      <Menu />
+      <menu />
       {/* Logo */}
       <img className="logo" src={logo} width="139px" height="116px"></img>
       {/* Image of me */}
