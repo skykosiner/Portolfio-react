@@ -1,0 +1,198 @@
+@import '/Users/yonikosiner/my-app/src/styles/_Color.scss';
+// Set mobile to display none
+.mobile{
+    display: none;
+    &_.email{
+        position: absolute;
+        top: 20%;
+    }
+    &_.email-text{
+        position: absolute;
+        top: 23%;
+        text-decoration: none;
+        color: $light-grey;
+    }
+    &_.phone{
+        position: absolute;
+        top: 27%;
+    }
+    &_.phone-text{
+        position: absolute;
+        color: $light-grey;
+        text-decoration: none;
+        top: 30.5%;
+    }
+}
+// For desktop
+.desktop{
+    margin: 0;
+    padding: 0; 
+    // For logo 
+    &_.logo{
+        position: absolute;
+        top: 0.9%;
+        left: 5%;
+    }
+    // For phone
+    &_.email{
+        position: absolute;
+        right: 21%;
+    }
+    &_.email-text{
+        position: absolute;
+        right: 3%;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: #444444;
+    }
+    &_.phone{
+        position: absolute;
+        right: 35%;
+    }
+    &_.phone-text{
+        position: absolute;
+        right: 25%;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        color: #444444;
+    }
+    a{
+        color: #444444;
+        padding: 5px;
+    }
+    // For link
+    &_.link{
+        cursor: pointer;
+        position: absolute;
+        left: 5%;
+        top: 17%;
+        color: #444444;
+        >.link0{
+            padding: 5px;
+        }
+        >.link1{
+            padding: 5px;
+        }
+         >.link2{
+            padding: 5px;
+        }
+         >.link3{
+            padding: 5px;
+        }
+         >.link4{
+            padding: 5px;
+        }
+         >.link5{
+            padding: 5px;
+        }
+         >.link6{
+            padding: 5px;
+        }
+         >.link7{
+            padding: 5px;
+        }
+         >.link8{
+            padding: 5px;
+        }
+         >.link9{
+            padding: 5px;
+        }
+         >.link10{
+            padding: 5px;
+        }
+    }
+}
+// Hover effect for links
+@media (hover: hover) {
+
+}
+// Humbugger menu
+$bar-width: 75px;
+$bar-height: 5px;
+$bar-spacing: 24px;
+.menu-wrapper {
+	position: absolute;
+  top: 4%;
+  right: 3%;
+  width: $bar-width;
+	height: $bar-height + $bar-spacing*2;
+    cursor: pointer;
+    color: $white;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: $bar-width;
+	height: $bar-height;
+}
+
+.hamburger-menu {
+	position: relative;
+    transform: translateY($bar-spacing);
+    transition: all 0ms 300ms;
+    background-color: $white;
+  
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.hamburger-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: rgba(255, 255, 255, 1);
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: rgba(255, 255, 255, 1);
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    color: $white;
+}
+
+.hamburger-menu.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+    color: $white;
+}
+
+.hamburger-menu.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+    color: $white;
+}
+.inside{
+    position: absolute;
+    margin: 30px;
+    top: 8%;
+  font-family: "Roboto", sans-serif; 
+  display: none;
+  font-size: 50px;
+  color: $light-grey;
+  cursor: pointer;
+  > a {
+      color: #444444;
+  }
+}
+.logo-mobile{
+    position: absolute;
+    top: 0.5%;
+}
+// Change to hamburger menu
+@media only screen and (max-width: 900px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+}

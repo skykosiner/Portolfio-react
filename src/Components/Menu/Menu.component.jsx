@@ -4,31 +4,33 @@ import './menu.scss'
 const menu = () => {
     function toggle() {
         var m = document.getElementById("animate")
-        var a = document.getElementById("toggle")
         var x = document.getElementById("inside");
-        if (x.style.display === "none") {
+        var a = document.getElementById("all");
+        if (a.style.display === "block") {
             x.style.display = "block";
-            a.style.display = "none";
             m.classList.add("animate");
+            a.style.display = "none"
         } else {
             x.style.display = "none";
-            a.style.display = "block";
             m.classList.remove("animate");
+            a.style.display = "block";
         }
     }
-
     return (
         <div className="app">
+            {/* Mobile */}
+            <div className="mobile">
+            </div>
             <div onClick={toggle} className="menu-wrapper">
                 <div id="animate" className="hamburger-menu"></div>
             </div>
             <div id="inside" className="inside">
-                <p className="global-underline">Home</p>
-                <br></br>  <p className="global-underline">About</p>
-                <p className="global-underline">Home automation page</p>
+                <a className="global-underline global-link" href="/"><p>Home<br /></p></a>
+                <br /><a className="global-underline global-link" href="/about"><p >About me <br /></p></a>
+                <br /><a className="global-underline">Contact <br /></a>
             </div>
         </div>
     );
-};
+}
 
-export default menu;
+export default menu;  
