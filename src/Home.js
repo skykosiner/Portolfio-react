@@ -13,7 +13,7 @@ import git from './images/github.svg'
 // Image of me
 import me from './images/me.jpg'
 // Import footer 
-import Footer from './Components/Footer/Footer.js';
+import Footer from './Components/Footer/Footer.component.jsx';
 
 function Home() {
     return (
