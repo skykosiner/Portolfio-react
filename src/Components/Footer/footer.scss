@@ -5,9 +5,9 @@
 .footer{
   font-family: "Roboto", sans-serif;
   font: 15px;
-  position: absolute;
+  position: fixed; 
+  bottom: 0; 
   height: 60px;
-  bottom: -2%;
   background-color: #3B3B3B;
   width: 100%;
   color: #ffffff;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './styles/home.scss';
-import './styles/App.scss';
 // Logo
 import logo from './images/Logo.svg';
 // Menu

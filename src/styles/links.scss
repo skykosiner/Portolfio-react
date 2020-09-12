@@ -10,11 +10,8 @@
 // For image of me
 .center{
     text-align: center;
-}
-.me{
-    position: absolute;
-    border-radius: 10%;
-    margin-top: 30px;
-    width: 210px;
-    height: 300px;
+    &_.me-img{
+        width: 200px;
+        height: 300px;
+    }
 }

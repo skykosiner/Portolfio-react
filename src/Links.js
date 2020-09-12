@@ -8,7 +8,7 @@ function Links() {
     return (
         <div className="app">
             <div className="center">
-                <img src={me} alt="" className="me" />
+                <img src={me} alt="" className="center_ me-img" />
             </div>
         </div >
     );

@@ -1,9 +1,13 @@
 @import 'global.scss';
 @import '_fonts.scss';
+*{
+  margin: 0;
+  padding: 0;
+}
 // Logo
 .logo{
-    position: absolute;
-    margin: -13px;
+  position: absolute;
+  margin: -13px;
 }
 //  Title
 .hello {
@@ -15,7 +19,6 @@
   bottom: 58%;
   cursor: default;
 }
-
 .list {
   color: $light-grey;
   font-size: 45px;
@@ -27,10 +30,10 @@
 }
 // Image of me
 .me {
-  top: 11%;
+  top: 13%;
   right: 0;
   margin-right: 18%;
-  height: 729px;
+  height: 660px;
   width: 450px;
   right: -15%;
   position: absolute;
