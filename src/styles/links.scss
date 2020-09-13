@@ -6,12 +6,39 @@
     padding: 0;
     box-sizing: border-box;
     background-color: $background;
+    font-family: $roboto;
+    color: #707070;
 }
-// For image of me
+.title{
+    text-align: center;
+    font-size: 60px;
+    margin: 30px;
+    cursor: default;
+}
 .center{
     text-align: center;
-    &_.me-img{
-        width: 200px;
-        height: 300px;
+    margin: -20px;
+    &_.img-me{
+        width: 222.5px;
+        height: 349px;
     }
+}
+.links{
+    border: red 1px solid;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+button{
+    font-size: 35px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: #4FB0DB 4px solid;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 2px;
+    margin: 10px;
 }
