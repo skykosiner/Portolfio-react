@@ -9,6 +9,9 @@
     font-family: $roboto;
     color: #707070;
 }
+#overflow{
+    overflow: hidden;
+}
 .title{
     text-align: center;
     font-size: 60px;
@@ -24,18 +27,17 @@
     }
 }
 .links{
-    border: red 1px solid;
     text-align: center;
     margin: 50px;
     padding: 5px;
-    white-space: pre-wrap;
+    overflow: hidden;
 }
 button{
     font-size: 35px;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: #4FB0DB 4px solid;
-    width: 300px;
+    width: 230px;
     cursor: pointer;
     overflow: hidden;
     outline: none;
