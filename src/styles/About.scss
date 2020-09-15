@@ -1,0 +1,25 @@
+@import 'global.scss';
+@import '_fonts.scss';
+*{
+    margin: 0;
+    padding: 0;
+}
+// For title
+.title{
+    font: size 60px;
+}
+// For logo
+.logo{
+    position: absolute;
+    top: 0%;
+}
+// For hello world text
+.hello-world{
+    text-align: center; 
+    font-size: 3.125em;
+}
+.hello-text{
+    text-align: center;
+    margin: 250px;
+    font-size: 1.875rem;
+}

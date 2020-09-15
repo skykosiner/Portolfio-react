@@ -131,7 +131,7 @@ $bar-spacing: 24px;
 	position: relative;
     transform: translateY($bar-spacing);
     transition: all 0ms 300ms;
-    background-color: $white;
+     background-color: $light-grey;
   
   &.animate {
     background: rgba(255, 255, 255, 0); 
@@ -143,7 +143,7 @@ $bar-spacing: 24px;
 	position: absolute;
 	left: 0;
 	bottom: $bar-spacing;
-	background: rgba(255, 255, 255, 1);
+	background: $light-grey;
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1) transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -152,23 +152,23 @@ $bar-spacing: 24px;
 	position: absolute;
 	left: 0;
 	top: $bar-spacing;
-	background: rgba(255, 255, 255, 1);
+	background: $light-grey;
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-    color: $white;
+    background-color: $light-grey;
 }
 
 .hamburger-menu.animate:after {
 	top: 0;
 	transform: rotate(45deg);
     transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-    color: $white;
+    background-color: $light-grey;
 }
 
 .hamburger-menu.animate:before {
 	bottom: 0;
 	transform: rotate(-45deg);
     transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-    color: $white;
+    background-color: $light-grey;
 }
 .inside{
     position: absolute;
