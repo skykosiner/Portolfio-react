@@ -10,6 +10,14 @@ import logo from './images/Logo.svg';
 import Footer from './Components/Footer/Footer.component.jsx';
 
 function About() {
+    function more() {
+        var a = document.getElementById("About-text")
+        if (a.style.display === "block") {
+            a.style.display = "none"
+        } else {
+            a.style.display = "block"
+        }
+    }
     return (
         <div className="app">
             <Menu />
@@ -24,6 +32,13 @@ function About() {
                 {/* About text */}
                 <p className="hello-text">I’m currently a student studying computer science. (self taught web dev/iOS/python before
                 <br /> learning computer science at school)</p>
+                {/* Button for read more */}
+                <button onClick={more} className="more">
+                    Read more
+                </button>
+                <p className="about" id="About-text">
+                    I'm a 13 year old student studying computer science in London. I'm also a self taught web developer learning ios development.
+                </p>
                 <Footer />
             </div>
         </div >
