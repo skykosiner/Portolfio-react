@@ -38,6 +38,7 @@ function About() {
                 </button>
                 <p className="about" id="About-text">
                     I'm a 13 year old student studying computer science in London. I'm also a self taught web developer learning ios development.
+                    If you would like to see more checkout my instagram <a href="https://www.instagram.com/kosiner.codes" className="global-link global-underline" target=" _blank" >@kosiner.codes</a>
                 </p>
                 <Footer />
             </div>
