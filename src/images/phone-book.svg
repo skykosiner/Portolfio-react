@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414" height="512" viewBox="0 0 414 512">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="414" height="512" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="phone-book" clip-path="url(#clip-path)">
+    <g id="phone-book-2" data-name="phone-book" transform="translate(-49)">
+      <path id="Path_1" data-name="Path 1" d="M448,0H96A15,15,0,0,0,81,15V81H64a15,15,0,0,0,0,30H81v50H64a15,15,0,0,0,0,30H81v50H64a15,15,0,0,0,0,30H81v50H64a15,15,0,0,0,0,30H81v50H64a15,15,0,0,0,0,30H81v66a15,15,0,0,0,15,15H448a15,15,0,0,0,15-15V15A15,15,0,0,0,448,0ZM433,482H111V431h17a15,15,0,0,0,0-30H111V351h17a15,15,0,0,0,0-30H111V271h17a15,15,0,0,0,0-30H111V191h17a15,15,0,0,0,0-30H111V111h17a15,15,0,0,0,0-30H111V30H433Z" fill="#707070"/>
+      <path id="Path_2" data-name="Path 2" d="M177,360a15,15,0,0,0,30,0c0-39.816,24.313-81,65-81s65,41.184,65,81a15,15,0,0,0,30,0c0-38.116-17.4-77.6-49.26-97.756a71,71,0,1,0-91.48,0C194.4,282.4,177,321.89,177,360Zm54-152a41,41,0,1,1,41,41A41.047,41.047,0,0,1,231,208Z" fill="#707070"/>
+    </g>
+  </g>
+</svg>

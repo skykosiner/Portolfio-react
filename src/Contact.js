@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/home.scss';
+import './styles/Contact.scss';
 // Logo
 import logo from './images/Logo.svg';
 // Menu
@@ -9,42 +9,42 @@ import instagram from './images/instagram.svg';
 import twitter from './images/twitter.svg';
 import email from './images/email.svg';
 import git from './images/github.svg'
-// Image of me
-import me from './images/me.jpg'
+// Contact icon
+import connect from './images/phone-book.svg';
 // Import footer 
 import Footer from './Components/Footer/Footer.component.jsx';
-
-function Home() {
+function Contact() {
     return (
         <div className="app">
+            {/* For hamburger menu */}
             <Menu />
             <div id="all">
                 {/* Logo */}
                 <img alt="" className="logo" src={logo} width="139px" height="116px"></img>
-                {/* Image of me */}
-                <img alt="" src={me} className="me" width="458.5px" height="720px"></img>
+                {/* Connect */}
+                <img className="connect" src={connect} alt="" />
                 {/* Title */}
-                <p className="hello">Hello my name is Yoni Kosiner</p>
-                <h3 className="list">Developer, Designer, Student</h3>
-                {/* Social */}
-                <div className="social">
+                <h2 className="touch">Lets get in touch</h2>
+                {/* For image */}
+                <div className="icons">
                     <a href="https://www.instagram.com/kosiner.codes" target=" _blank">
-                        <img alt="" className="image" src={instagram}></img>
+                        <img alt="" className="icons_ icon" src={instagram}></img>
                     </a>
                     <a href="https://twitter.com/KosinerYoni" target=" _blank">
-                        <img alt="" className="image1" src={twitter}></img>
+                        <img alt="" className="icons_ icon" src={twitter}></img>
                     </a>
                     <a href="mailto:yoni@kosiner.co.uk?subject=Yoni%20Kosiner%20Inquiry" target=" _blank">
-                        <img alt="" className="image2" src={email}></img>
+                        <img alt="" className="icons_ icon" src={email}></img>
                     </a>
                     <a href="https://github.com/yonikosiner" target=" _blank">
-                        <img alt="" className="image3" src={git}></img>
+                        <img alt="" className="icons_ icon" src={git}></img>
                     </a>
                 </div>
+                {/* For footer */}
                 <Footer />
             </div>
         </div>
     );
 }
 
-export default Home;
+export default Contact;

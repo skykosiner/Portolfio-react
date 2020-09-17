@@ -3,7 +3,7 @@ import React from 'react';
 import '/Users/yonikosiner/my-app/src/styles/About.scss';
 import './styles/App.scss';
 // Import menu
-import Menu from '/Users/yonikosiner/my-app/src/Components/Menu/Menu.component.jsx';
+import Menu from './Components/Menu/Menu.component.jsx';
 // Logo
 import logo from './images/Logo.svg';
 // Import footer

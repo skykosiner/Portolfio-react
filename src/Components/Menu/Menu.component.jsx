@@ -5,7 +5,7 @@ const menu = () => {
     function toggle() {
         var m = document.getElementById("animate")
         var x = document.getElementById("inside");
-        var a = document.getElementById("all");
+        var a = document.getElementById("all")
         if (a.style.display === "block") {
             x.style.display = "block";
             m.classList.add("animate");
@@ -27,7 +27,7 @@ const menu = () => {
             <div id="inside" className="inside">
                 <a className="global-underline global-link" href="/"><p>Home<br /></p></a>
                 <br /><a className="global-underline global-link" href="/about"><p >About me <br /></p></a>
-                <br /><a className="global-underline">Contact <br /></a>
+                <br /><a className="global-underline global-link" href="/Contact">Contact <br /></a>
             </div>
         </div>
     );

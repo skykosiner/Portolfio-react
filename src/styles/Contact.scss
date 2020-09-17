@@ -1,0 +1,29 @@
+@import 'global.scss';
+@import '_fonts.scss';
+// For lets get in touch
+.touch{
+    position: absolute;
+    margin: 250px;
+    text-align: left;
+    left: 30%;
+    font-size: 40px;
+}
+// For social icons
+.icons{
+    position: absolute;
+    margin: 313px;
+    display: flex;
+    left: 24.7%;
+    float: left;
+    &_.icon{
+        margin: 10px;
+    }
+}
+.connect{
+    position: absolute;
+    margin: 200px;
+    left: 10%;
+    display: flex;
+    height: 300px;
+    width: 300px;
+}
