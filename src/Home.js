@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/home.scss';
-// Logo
+// Import logo
 import logo from './images/Logo.svg';
 // Menu
 import Menu from './Components/Menu/Menu.component.jsx';
@@ -8,8 +8,8 @@ import Menu from './Components/Menu/Menu.component.jsx';
 import instagram from './images/instagram.svg';
 import twitter from './images/twitter.svg';
 import email from './images/email.svg';
-import git from './images/github.svg'
-// Image of me
+import git from './images/github.svg';
+// Image of me 
 import me from './images/me.jpg'
 // Import footer 
 import Footer from './Components/Footer/Footer.component.jsx';

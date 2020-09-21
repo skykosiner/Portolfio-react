@@ -27,3 +27,45 @@
     height: 300px;
     width: 300px;
 }
+
+
+// For Small and media sizes phone
+@media only screen and (max-width: 375px){
+    .connect{
+        display: none;
+    }
+    .touch{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        top: -10%;
+        left: -55%;
+    }
+    .icons{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        top: -7%;
+        left: -74%; 
+    }
+}
+// For bigger phone
+@media only screen and (width: 425px){
+    .connect{
+        display: none;
+    }
+    .touch{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        top: -10%;
+        left: -55%;
+    }
+    .icons{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        top: -11.5%;
+        left: -72.5%; 
+    }
+}

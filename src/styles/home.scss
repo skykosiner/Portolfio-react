@@ -35,27 +35,26 @@
   position: absolute;
 }
 // Social
-.image {
-  margin: 50px;
+.social{
   position: absolute;
-  left: -1.4%;
-  bottom: 43%;
+  bottom: 48%;
+  left: 1.6%;
 }
-.image1 {
-  margin: 50px;
-  position: absolute;
-  left: 3.5%;
-  bottom: 43%;
+img{
+  margin-left: 10px;
 }
-.image2 {
-  margin: 50px;
-  position: absolute;
-  left: 9.5%;
-  bottom: 43.1%;
-}
-.image3 {
-  margin: 50px;
-  position: absolute;
-  left: 15.5%;
-  bottom: 43.1%;
+
+@media only screen and (max-width: 769px){
+  // for image of me 
+  .me{
+    display: none;
+  }
+  .list{
+    font-size: 40px;
+    bottom: 40%;
+  }
+  .social{
+    bottom: 36%;
+    left: 6%;
+  }
 }
