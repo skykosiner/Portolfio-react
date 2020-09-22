@@ -4,10 +4,6 @@
     margin: 0;
     padding: 0;
 }
-// For title
-.title{
-    font: size 60px;
-}
 // For logo
 .logo{
     position: absolute;
@@ -25,7 +21,7 @@
 }
 .more{
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 40%;
 }
 .about{
@@ -34,4 +30,117 @@
     margin: 5px;
     font-size: 2rem;
     display: none;
+}
+
+@media only screen and (max-width: 400px){
+    .title{
+        position: absolute;
+        left: -8%;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .hello-world{
+        position: absolute;
+        bottom: 30%;
+    }
+    .hello-text{
+        position: absolute;
+        width: 100%;
+        bottom: 11%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .more{
+        position: absolute;
+        left: 0%;
+        line-height: 1px;
+        height: 60px;
+        margin: 80px;
+    }
+}
+@media only screen and (width: 425px){
+       .title{
+        position: absolute;
+        left: -8%;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .hello-world{
+        position: absolute;
+        bottom: 30%;
+    }
+    .hello-text{
+        position: absolute;
+        width: 100%;
+        bottom: 11%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .more{
+        position: absolute;
+        left: 0%;
+        line-height: 1px;
+        height: 60px;
+        margin: 90px;
+    } 
+}
+@media only screen and (width: 768px){
+     .title{
+        position: absolute;
+        left: -8%;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .hello-world{
+        position: absolute;
+        bottom: 50%;
+    }
+    .hello-text{
+        position: absolute;
+        width: 100%;
+        bottom: 30%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .more{
+        position: absolute;
+        left: 34%;
+        line-height: 1px;
+        height: 60px;
+        margin: 0px;
+    }
+}
+@media only screen and (width: 1024px){
+     .title{
+        position: absolute;
+        left: -2%;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .hello-world{
+        position: absolute;
+        bottom: 50%;
+    }
+    .hello-text{
+        position: absolute;
+        width: 100%;
+        bottom: 40%;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    .more{
+        position: absolute;
+        left: 50%;
+        line-height: 1px;
+        height: 60px;
+        margin: -100px;
+    }
 }
