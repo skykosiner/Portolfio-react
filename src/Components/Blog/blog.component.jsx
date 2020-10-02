@@ -1,24 +1,23 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown'
-import termsFrPath from './blog'
+import React, { Component } from 'react';
+import AppMarkdown from '/Users/yonikosiner/my-app/src/blog-posts/hi.md';
+import ReactMarkdown from 'react-markdown';
 
-class Terms extends Component {
-    constructor(props) {
-        super(props)
+class log extends Component {
 
-        this.state = { terms: null }
+    constructor() {
+        super();
+        this.state = { markdown: '' };
     }
 
     componentWillMount() {
-        fetch(termsFrPath).then((response) => response.text()).then((text) => {
-            this.setState({ terms: text })
-        })
+        // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
+        fetch(AppMarkdown).then(res => res.text()).then(text => this.setState({ markdown: text }));
     }
 
-    const log = () => {
-        return (
-            <p>hi</p>
-        );
+    render() {
+        const { markdown } = this.state;
+        return <ReactMarkdown source={markdown} />;
     }
+}
 
-    export default log;
+export default log;
