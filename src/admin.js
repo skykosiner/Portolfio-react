@@ -10,6 +10,7 @@ function admin() {
                 window.location.href = "/admin-page"
                 console.log("authorised")
             }
+console.log("hello world")
         }
     }
     return (
