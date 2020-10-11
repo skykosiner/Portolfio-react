@@ -39,15 +39,14 @@ class Login extends Component {
             <div className="col-md-6">
                 <form>
                     <div className="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input style={{
+                            textAlign: "center", top: "35%", left: "40%", margin: "5px", width: "20%", position: "absolute", height: "2%"
+                        }} value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form - control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" />
                     </div>
                     <div className="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                        <input style={{ textAlign: "center", top: "40%", left: "40%", margin: "5px", width: "20%", position: "absolute", height: "2%" }} value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                     </div>
-                    <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
+                    <div style={{ fontSize: "25px", textAlign: "center", top: "43%", left: "40%", margin: "5px", width: "20%", position: "absolute", height: "2%", cursor: "pointer" }} type="submit" onClick={this.login} className="btn btn-primary">Login</div>
                 </form>
 
             </div>
