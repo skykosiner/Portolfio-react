@@ -15,18 +15,11 @@ import me from './images/me.jpg'
 import Footer from './Components/Footer/Footer.component.jsx';
 
 function Home() {
-
-    const [isShowing, toggle] = useState(false)
-
-    function menu() {
-        toggle(!isShowing)
-    }
-
     return (
         <div className="app">
-            <div id={isShowing ? "menu-show" : ""}>
-                <Menu />
-                {/* Logo */}
+            <Menu />
+            <div id="all">
+                {/* Logo  */}
                 <img alt="" className="logo" src={logo} width="139px" height="116px"></img>
                 {/* Image of me */}
                 <img alt="" src={me} className="me" width="458.5px" height="720px"></img>

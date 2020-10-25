@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
+import gsap from "gsap";
 import './menu.scss'
 
 function Menu() {
+    window.onload = console.log("hello there")
     const [isShowing, toggle] = useState(false);
 
     function menu() {
+        var x = document.getElementById("all")
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
         toggle(!isShowing)
     }
 
@@ -16,11 +24,20 @@ function Menu() {
                 <br /><span></span>
             </div>
             <div className="slide" id={isShowing ? "menu-show" : ""}>
-                <a href="/">Home</a>
-                <br /><a href="/about">About</a>
-                <br /><a href="/contact">Contact</a>
-                <br /><a href="/Shortcuts">Shortcuts</a>
+                <a href="/">
+                    <p>Home</p>
+                </a>
+                <a href="/about">
+                    <br /> <p>About</p>
+                </a>
+                <a href="/contact">
+                    <br /> <p>Contact</p>
+                </a>
+                <a href="/Shortcuts">
+                    <br /> <p>Shortcuts</p>
+                </a>
             </div>
+            <div className="slider"></div>
         </div>
     );
 }
