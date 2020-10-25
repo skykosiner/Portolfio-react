@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/home.scss';
 // Import logo
 import logo from './images/Logo.svg';
@@ -15,10 +15,17 @@ import me from './images/me.jpg'
 import Footer from './Components/Footer/Footer.component.jsx';
 
 function Home() {
+
+    const [isShowing, toggle] = useState(false)
+
+    function menu() {
+        toggle(!isShowing)
+    }
+
     return (
         <div className="app">
-            <Menu />
-            <div id="all">
+            <div id={isShowing ? "menu-show" : ""}>
+                <Menu />
                 {/* Logo */}
                 <img alt="" className="logo" src={logo} width="139px" height="116px"></img>
                 {/* Image of me */}

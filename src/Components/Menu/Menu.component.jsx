@@ -15,11 +15,11 @@ function Menu() {
                 <br /><span></span>
                 <br /><span></span>
             </div>
-            <div className="slide" className={isShowing ? "menu-show" : ""}>
+            <div className="slide" id={isShowing ? "menu-show" : ""}>
                 <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/Shortcuts">Shortcuts</a>
+                <br /><a href="/about">About</a>
+                <br /><a href="/contact">Contact</a>
+                <br /><a href="/Shortcuts">Shortcuts</a>
             </div>
         </div>
     );

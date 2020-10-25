@@ -1,6 +1,6 @@
 @import '../../styles/Color';
 // Outside of hamburger menu
-.menu-show{
+#menu-show{
     display: block;
 }
 span{
@@ -36,7 +36,14 @@ span:nth-child(3){
 }
 // Inside menu
 .slide{
+    display: none;
     position: absolute;
+    letter-spacing: 5px;
     right: 5%;
-    color: black;
+    color: #ffffff;
+    background-color: #636161;
+}
+.slide a {
+    color: #ffffff;
+    text-decoration: none;
 }
