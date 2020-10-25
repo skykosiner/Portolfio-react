@@ -29,11 +29,11 @@ function Links() {
                 <img className="center_ img-me" src={me} alt="" />
             </div>
             <div className="links">
-                <button onClick={insta} className="instagram"> 📷  Instagram</button>
-                <button onClick={twitter} className="twitter"> 🐦 Twitter</button>
-                <button onClick={portfolio} className="portfolio">🧑‍💻 Portfolio</button>
-                <button onClick={git} className="git">🖥  GitHub</button>
-                <button onClick={set} className="setup">🖱 Setup Gear</button>
+                <button onClick={insta} className="instagram button"> 📷  Instagram</button>
+                <button onClick={twitter} className="twitter button"> 🐦 Twitter</button>
+                <button onClick={portfolio} className="portfolio button">🧑‍💻 Portfolio</button>
+                <button onClick={git} className="git button">🖥  GitHub</button>
+                <button onClick={set} className="setup button">🖱 Setup Gear</button>
             </div>
         </div >
     );
