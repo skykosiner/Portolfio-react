@@ -1,6 +1,6 @@
 import React from 'react';
 // Import sass
-import '/Users/yonikosiner/my-app/src/styles/About.scss';
+import './styles/About.scss';
 import './styles/App.scss';
 // Import menu
 import Menu from './Components/Menu/Menu.component.jsx';
