@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import gsap from "gsap";
 import './menu.scss'
+import styled from 'styled-components';
 
 function Menu() {
     window.onload = console.log("hello there")

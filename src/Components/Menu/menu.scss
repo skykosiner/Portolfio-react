@@ -1,70 +1,68 @@
-@import '../../styles/Color';
+@import "../../styles/Color";
 // Outside of hamburger menu
-#menu-show{
-    display: block;
+#menu-show {
+  display: block;
 }
-span{
-    cursor: pointer;
-    display: inline-block;
-    width: 45px;
-    height: 4px;
-    margin-bottom: 1px;
-    position: relative;
-    top: 19%;
-    left: 94.5%;
-    background: #a09999;
-    border-radius: 3px;
-    z-index: 100;
-    transform-origin: 1px 0px;
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-    opacity 0.55s ease;
-}
-
-span:first-child{
-    transform-origin: 0% 0%;
-    transform: translateY(11px);
+span {
+  cursor: pointer;
+  display: inline-block;
+  width: 45px;
+  height: 4px;
+  margin-bottom: 1px;
+  position: relative;
+  top: 19%;
+  left: 94.5%;
+  background: #a09999;
+  border-radius: 3px;
+  z-index: 100;
+  transform-origin: 1px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-span:nth-child(2){
-    transform-origin: 0% 100%;
-    transform: translateY(7px);
+span:first-child {
+  transform-origin: 0% 0%;
+  transform: translateY(11px);
+}
+span:nth-child(2) {
+  transform-origin: 0% 100%;
+  transform: translateY(7px);
 }
 
-span:nth-child(3){
-    transform: translateY(5px);
+span:nth-child(3) {
+  transform: translateY(5px);
 }
 // Inside menu
-.slide{
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    letter-spacing: 5px;
-    font-size: 50px;
-    background-color: #636161;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.slide {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  letter-spacing: 5px;
+  font-size: 50px;
+  background-color: #636161;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .slide a p {
-    display: inline-block;
-    position: fixed;
-    transform: translate(-50%,);
-    color: #ffffff;
-    text-decoration: none;
-    margin-top: -10px;
+  display: inline-block;
+  position: fixed;
+  transform: translateY(350px);
+  color: #ffffff;
+  text-decoration: none;
+  margin-top: -10px;
 }
-.slider{
-    position: fixed;
-    letter-spacing: 5px;
-    font-size: 50px;
-    background-color: #636161;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100% );
+.slider {
+  position: fixed;
+  letter-spacing: 5px;
+  font-size: 50px;
+  background-color: #636161;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
 }
