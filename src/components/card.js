@@ -15,6 +15,11 @@ const OutsideCard = styled.div`
     width: 285px;
     height: 296px;
     border-radius: 4%;
+    @media (min-width: 1080px) {
+        bottom: 50%;
+        width: 385px;
+        height: 396px;
+    }
 `
 
 const Div = styled.div`
