@@ -12,14 +12,12 @@ const CenterForm = styled.div`
 const ContactForm = () => {
      return(
         <CenterForm>
-             <form
-                 name="contact"
-                 method="post"
-                 data-netlify="true"
-                 data-netlify-honeypot= "bot-field"
-             >
-                 <input name="name" placeholder="Name: " type="" /> 
-                 <button>Send</button>
+            <form action="https://getform.io/f/657ab555-9090-4760-bddd-816aa2c36d7a" method="POST" >
+                <input type="text" name="name" placeholder="Name: " />
+                <input type="email" name="email" placeholder="Email: "/>
+                <input type="text" name="subject" placeholder="Subject: "/>
+                <input type="text" name="message" placeholder="Message: "/>
+                <button type="submit">Send</button>
             </form>
         </CenterForm>
     );

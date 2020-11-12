@@ -79,7 +79,6 @@ const Links = styled.li`
 `
 
 const Header = () => {
-  window.onload = console.log("hello there")
   const [isShowing, toggle] = useState(false);
   
   function menu() {

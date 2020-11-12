@@ -11,7 +11,6 @@ const OutsideCard = styled.div`
     align-items: center;
     flex-direction: column;
     box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
-    /* -webkit-box-shadow: 5px 5px 5px 5px  #000 ; */
     width: 285px;
     height: 296px;
     border-radius: 4%;
