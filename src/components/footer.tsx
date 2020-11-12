@@ -17,7 +17,6 @@ const WrapperFooter = styled.footer`
     width: 100%;
     font-family: "Roboto", sans-serif;
     @media (min-width: 1080px) {
-        display: flex;
     }
 `
 
@@ -27,6 +26,7 @@ const FooterText = styled.p`
     @media (min-width: 1080px){
         position: absolute;
         left: 0;
+        border: 1px solid red;
     }
 `
 
@@ -36,7 +36,7 @@ const InstaText = styled.h2`
     color: #fff;
     @media(min-width: 1080px){ 
         position: absolute;
-        left: 13%;
+        bottom: 90%;
     }
 `
 // Outside instagram photos
@@ -153,11 +153,18 @@ const CenterLinks = styled.div`
     text-align: center;
     height: 10%;
 `
+const Br = styled.br`
+    @media (min-width: 1080px){
+        display: none;
+    }
+`
+
+
 
 const Footer = () => {
     return (
         <WrapperFooter>
-            <FooterText>Designed & developed by <br className="" p0qwq0az /> Yoni Kosiner ©2020</FooterText>
+            <FooterText>Designed & developed by <Br /> Yoni Kosiner ©2020</FooterText>
             {/* Instagram */}
             <InstaText>Instagram</InstaText>
             <CenterInsta>
