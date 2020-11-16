@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Title = styled.h1`
     text-align: center;
     font-size: 35px;
-    padding: 50px;
+    margin: 10px;
     font-family: "Roboto", sans-serif;
 ` 
 
@@ -12,7 +12,6 @@ const DescriptionWrapper = styled.div`
     font-size: 20px;
     display: flex;
     justify-content: center;
-    margin-top: -14%;
     font-family: "Roboto", sans-serif;
 `
 

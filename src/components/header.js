@@ -36,6 +36,14 @@ const LinksNav = styled.li`
   margin-left: 20px;
   right: 20%;
   font-family: "Roboto", sans-serif;
+  /* Transition effect for when user hovers over link in nav bar */
+  transition: 0.3s ease all;
+  /* hover effects */
+  &:hover{
+    border: 3px solid #5b6267;
+    background-color: #5b6267;
+    color: #fff; 
+  }
 `
 // Hamburger menu
 const MenuWrapper = styled.div`

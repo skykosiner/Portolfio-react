@@ -8,6 +8,7 @@ import Twit from '../images/twitter.svg';
 import Git from '../images/github.svg';
 
 const WrapperFooter = styled.footer`
+    display: none;
     height: 100%;
     position: absolute;
     bottom: -92%;
