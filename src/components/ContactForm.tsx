@@ -19,14 +19,22 @@ const Input = styled.input`
     width: 287px;
     height: 38px;
     margin-top: 20px;
+    transition: 0.2s ease all;
+    &:hover{
+        transform: scale(0.9); 
+    }
 `
 
 const Message = styled.input`
     border: none;
     box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
     width: 287px;
-    height: 187px; 
+    height: 185px; 
     margin-top: 20px;
+    transition: 0.2s ease all;
+    &:hover{
+        transform: scale(1.1); 
+    }
 `
 
 const SubmitCenter = styled.div`
@@ -35,7 +43,7 @@ const SubmitCenter = styled.div`
     z-index: 99;
 `
 const Submit = styled.button`
-    margin: 10px;
+    margin: 20px;
     border: none;
     text-align: center;
     color: #000;
@@ -45,6 +53,7 @@ const Submit = styled.button`
     &:hover{
         color: #fff;
         background-color: #5b6267;
+        transform: scale(1.2); 
     }
     @media (max-width: 769px){
         background-color: #5b6267;

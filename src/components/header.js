@@ -1,13 +1,13 @@
 import { Link } from "gatsby"
-import styled from 'styled-components';
+import styled from "styled-components"
 import React, { useState } from "react"
-import logo from '../images/logo.svg'
-import '../App.css';
-import './header.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from "../images/logo.svg"
+import "../App.css"
+import "./header.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Wrapper = styled.header`
-  background: #E3E3E3;
+  background: #e3e3e3;
   width: 100%;
   height: 124px;
   position: -webkit-sticky; /* Safari */
@@ -18,13 +18,17 @@ const Logo = styled.img`
   margin-left: -25px;
   width: 174px;
   height: 124px;
+  transition: 0.3s all ease;
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 const NavLinks = styled.ul`
   float: right;
   list-style: none;
   margin-top: 40px;
-  @media (max-width: 768px){
+  @media (max-width: 768px) {
     display: none;
   }
 `
@@ -36,13 +40,13 @@ const LinksNav = styled.li`
   margin-left: 20px;
   right: 20%;
   font-family: "Roboto", sans-serif;
-  /* Transition effect for when user hovers over link in nav bar */
   transition: 0.3s ease all;
   /* hover effects */
-  &:hover{
-    border: 3px solid #5b6267;
+  &:hover {
     background-color: #5b6267;
-    color: #fff; 
+    border: 3px solid #5b6267;
+    color: #fff;
+    transform: scale(1.1);
   }
 `
 // Hamburger menu
@@ -53,7 +57,7 @@ const MenuWrapper = styled.div`
   top: 4%;
   cursor: pointer;
   /* Scaling */
-  @media (min-width: 769px){
+  @media (min-width: 769px) {
     display: none;
   }
 `
@@ -87,24 +91,24 @@ const Links = styled.li`
 `
 
 const Header = () => {
-  const [isShowing, toggle] = useState(false);
-  
+  const [isShowing, toggle] = useState(false)
+
   function menu() {
     var x = document.getElementById("all")
     if (x.style.display === "none") {
-      x.style.display = "block";
+      x.style.display = "block"
     } else {
-      x.style.display = "none";
+      x.style.display = "none"
     }
     toggle(!isShowing)
   }
   return (
     <div>
       {/* Hamburger menu */}
-    <MenuWrapper onClick={menu}>
+      <MenuWrapper onClick={menu}>
         <Menu></Menu>
-       <br/> <Menu></Menu>
-       <br/> <Menu></Menu>
+        <br /> <Menu></Menu>
+        <br /> <Menu></Menu>
       </MenuWrapper>
       <Inside id={isShowing ? "menu-show" : ""}>
         <Link to="/">
@@ -120,26 +124,28 @@ const Header = () => {
           <Links>My projects</Links>
         </Link>
       </Inside>
-    <Wrapper>
-      <Logo src={logo} alt="" />
-      {/* Hamburger menu */}
-      <NavLinks>
-        <Link to="/">
-          <LinksNav>Home</LinksNav>
-        </Link>
-        <Link to="/about">
-          <LinksNav>About</LinksNav>
-        </Link>
-        <Link to="/contact">
-          <LinksNav>Contact</LinksNav>
-        </Link>
-        <Link to="/projects">
-          <LinksNav>My projects</LinksNav>
-        </Link>
-      </NavLinks>
-    </Wrapper>
+      <Wrapper>
+        <Logo src={logo} alt="" />
+        <NavLinks>
+          <Link to="/">
+            <LinksNav>Home</LinksNav>
+          </Link>
+          <Link to="/blog">
+            <LinksNav>Blog</LinksNav>
+          </Link>
+          <Link to="/about">
+            <LinksNav>About</LinksNav>
+          </Link>
+          <Link to="/contact">
+            <LinksNav>Contact</LinksNav>
+          </Link>
+          <Link to="/projects">
+            <LinksNav>My projects</LinksNav>
+          </Link>
+        </NavLinks>
+      </Wrapper>
     </div>
-  );
+  )
 }
 
 export default Header
