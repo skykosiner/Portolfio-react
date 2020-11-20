@@ -92,6 +92,11 @@ const Links = styled.li`
 
 const Header = () => {
   const [isShowing, toggle] = useState(false)
+  // const Esc = e => {
+  //   if (e.key === "Escape") {
+  //     alert("hello there")
+  //   }
+  // }
 
   function menu() {
     var x = document.getElementById("all")

@@ -87,7 +87,7 @@ const Submit = styled.button`
 
 const Blog = props => {
   return (
-    <Layout>
+    <Layout id="all">
       <Body>
         <Title>{props.data.markdownRemark.frontmatter.title}</Title>
         <Post

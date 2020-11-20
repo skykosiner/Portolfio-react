@@ -29,7 +29,7 @@ const Blog = () => {
     font-family: "Roboto", sans-serif;
   `
   const Post = styled.li`
-    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.1);
     border: none;
     width: 554px;
     margin: 19px;
@@ -43,6 +43,10 @@ const Blog = () => {
     &:hover {
       background-color: #d5d5d5;
     }
+    @media (max-width: 769px) {
+      width: 360px;
+      box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.1);
+    }
   `
   const List = styled.ol`
     list-style: none;
@@ -53,8 +57,15 @@ const Blog = () => {
     margin: 50px;
     font-family: "Roboto", sans-serif;
   `
+  const BlogTitle = styled.h2`
+    font-size: 25px;
+    margin-left: 10px;
+    @media (max-width: 760px) {
+      font-size: 20px;
+    }
+  `
   return (
-    <Layout>
+    <Layout id="all">
       <Title>Blog</Title>
       <List>
         {data.allMarkdownRemark.edges.map(edge => {
@@ -69,8 +80,14 @@ const Blog = () => {
               to={`/blog/${edge.node.fields.slug}`}
             >
               <Post key={edge.node.frontmatter.title}>
-                <h2>{edge.node.frontmatter.title}</h2>
-                <p style={{ position: "absolute", marginBottom: "-20px" }}>
+                <BlogTitle>{edge.node.frontmatter.title}</BlogTitle>
+                <p
+                  style={{
+                    position: "absolute",
+                    marginBottom: "-20px",
+                    marginLeft: "10px",
+                  }}
+                >
                   {edge.node.frontmatter.date}
                 </p>
               </Post>
