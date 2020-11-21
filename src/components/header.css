@@ -1,3 +1,4 @@
 #menu-show {
+  transition: 0.2s ease all;
   display: block;
 }

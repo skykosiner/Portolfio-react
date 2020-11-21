@@ -65,7 +65,7 @@ const Blog = () => {
     }
   `
   return (
-    <Layout id="all">
+    <Layout>
       <Title>Blog</Title>
       <List>
         {data.allMarkdownRemark.edges.map(edge => {

@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import styled from "styled-components"
 import React, { useState } from "react"
+import { motion } from "framer-motion"
 import logo from "../images/logo.svg"
 import "../App.css"
 import "./header.css"
@@ -71,40 +72,41 @@ const Menu = styled.span`
   background-color: #000;
   color: #000;
 `
-const Inside = styled.div`
-  background: #000;
+const Inside = styled(motion.div)`
+  background: #b2b2b2;
+  border-radius: 14px;
   background-size: cover;
   z-index: 99;
   display: none;
   position: absolute;
-  width: 100%;
-  top: 15%;
-  height: 85%;
+  width: 353px;
+  top: 20%;
+  height: 387px;
   overflow: hidden;
 `
 
 const Links = styled.li`
   text-decoration: none;
-  color: #fff;
+  list-style: none;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20.7px;
   font-family: "Roboto", sans-serif;
   margin: 5px;
+  font-size: 20px;
+`
+const Center = styled.div`
+  display: flex;
+  justify-content: center;
 `
 
 const Header = () => {
   const [isShowing, toggle] = useState(false)
-  // const Esc = e => {
-  //   if (e.key === "Escape") {
-  //     alert("hello there")
-  //   }
-  // }
+  const [isOpen, setIsOpen] = useState(false)
 
-  function menu() {
-    var x = document.getElementById("all")
-    if (x.style.display === "none") {
-      x.style.display = "block"
-    } else {
-      x.style.display = "none"
-    }
+  const menu = () => {
     toggle(!isShowing)
   }
   return (
@@ -115,20 +117,26 @@ const Header = () => {
         <br /> <Menu></Menu>
         <br /> <Menu></Menu>
       </MenuWrapper>
-      <Inside id={isShowing ? "menu-show" : ""}>
-        <Link to="/">
-          <Links>Home</Links>
-        </Link>
-        <Link to="/about">
-          <Links>About</Links>
-        </Link>
-        <Link to="/contact">
-          <Links>Contact</Links>
-        </Link>
-        <Link to="/projects">
-          <Links>My projects</Links>
-        </Link>
-      </Inside>
+      {/* Inside hamburger menu */}
+      <Center>
+        <Inside id={isShowing ? "menu-show" : ""}>
+          <Link to="/">
+            <Links>Home</Links>
+          </Link>
+          <Link to="/blog">
+            <Links>Blog</Links>
+          </Link>
+          <Link to="/about">
+            <Links>About</Links>
+          </Link>
+          <Link to="/contact">
+            <Links>Contact</Links>
+          </Link>
+          <Link to="/projects">
+            <Links>My projects</Links>
+          </Link>
+        </Inside>
+      </Center>
       <Wrapper>
         <Logo src={logo} alt="" />
         <NavLinks>
