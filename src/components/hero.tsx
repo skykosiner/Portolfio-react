@@ -24,7 +24,7 @@ const Here = () => {
         <div>
             <Title>Send me a message</Title>
             <DescriptionWrapper>
-                <Description>Feel free to get In touch with me. <br/> About coding productivity etc. <br/> I will respond ass I soon I can.</Description>
+                <Description>Feel free to get In touch with me. <br/> About working with me on a project <br />coding productivity etc. <br/> I will respond as I soon I can.</Description>
             </DescriptionWrapper>
         </div>
      )

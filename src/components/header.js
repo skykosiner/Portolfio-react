@@ -42,12 +42,8 @@ const LinksNav = styled.li`
   right: 20%;
   font-family: "Roboto", sans-serif;
   transition: 0.3s ease all;
-  /* hover effects */
   &:hover {
-    background-color: #5b6267;
-    border: 3px solid #5b6267;
-    color: #fff;
-    transform: scale(1.1);
+    text-decoration: underline;
   }
 `
 // Hamburger menu
@@ -74,28 +70,39 @@ const Menu = styled.span`
 `
 const Inside = styled(motion.div)`
   background: #b2b2b2;
-  border-radius: 14px;
   background-size: cover;
   z-index: 99;
   display: none;
   position: absolute;
   width: 353px;
-  top: 20%;
-  height: 387px;
+  top: 17%;
+  right: 0;
+  height: 100%;
   overflow: hidden;
+  transition: 1s ease all;
+  -webkit-animation: linear alternate;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 0.2s;
+  @keyframes run {
+    from {
+      left: 90%;
+    }
+    to {
+      left: 200px;
+    }
+  }
 `
 
 const Links = styled.li`
   text-decoration: none;
   list-style: none;
   color: #000;
-  background-color: #fff;
   text-align: center;
   border-radius: 10px;
   padding: 20.7px;
   font-family: "Roboto", sans-serif;
   margin: 5px;
-  font-size: 20px;
+  font-size: 40px;
 `
 const Center = styled.div`
   display: flex;
@@ -119,7 +126,10 @@ const Header = () => {
       </MenuWrapper>
       {/* Inside hamburger menu */}
       <Center>
-        <Inside id={isShowing ? "menu-show" : ""}>
+        <Inside
+          transition={{ ease: "easeOut", duration: 0.4 }}
+          id={isShowing ? "menu-show" : ""}
+        >
           <Link to="/">
             <Links>Home</Links>
           </Link>

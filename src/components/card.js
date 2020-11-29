@@ -55,6 +55,24 @@ const Web = styled.p`
   font-family: "Roboto", sans-serif;
 `
 
+const Work = styled(Link)`
+  position: absolute;
+  background: none;
+  border: 5px solid #333333;
+  transition: 0.2s ease all;
+  color: #000;
+  bottom: 40%;
+  &:hover {
+    color: #fff;
+    background-color: #333333;
+  }
+  @media (max-width: 769px) {
+    background-color: #333333;
+    color: #fff;
+    bottom: 27%;
+  }
+`
+
 const Card = () => {
   return (
     <Div>
@@ -69,6 +87,7 @@ const Card = () => {
           <Web>Web developer & student & blogger</Web>
         </Link>
       </OutsideCard>
+      <Work to="/contact">Would you like to work with me?</Work>
     </Div>
   )
 }

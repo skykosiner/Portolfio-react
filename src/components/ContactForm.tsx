@@ -64,7 +64,7 @@ const Submit = styled.button`
 const ContactForm = () => {
      return(
         <FromWrapper> 
-            <Form action="https://getform.io/f/657ab555-9090-4760-bddd-816aa2c36d7a" method="POST" >
+            <Form action="http://localhost:3000/contact" method="POST" >
                 {/* --------- Name ---------- */}
                 <Input type="text" name="name" placeholder="Name: " />
                 {/* --------- Email ---------- */}
