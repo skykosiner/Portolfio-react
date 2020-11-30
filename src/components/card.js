@@ -58,7 +58,8 @@ const Web = styled.p`
 const Work = styled(Link)`
   position: absolute;
   background: none;
-  border: 5px solid #333333;
+  border: 4px solid #333333;
+  padding: 5px;
   transition: 0.2s ease all;
   color: #000;
   bottom: 40%;
