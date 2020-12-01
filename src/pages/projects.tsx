@@ -26,6 +26,10 @@ const ProjectImg = styled.img`
     position: absolute;
     right: 3%;
     top: 20%;
+    transition: all 0.2s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
 `
 const Desc = styled.p`
     margin-top: -2%;
@@ -40,11 +44,15 @@ const Img = styled.img`
     position: absolute;
     right: 3%;
     top: 45%;
+    transition: all 0.2s ease;
+    &:hover{
+        transform: scale(1.1);
+    }
 `
 
 const SeeCode = styled.button`
     position: absolute;
-    margin-left: 9.6%;
+    margin-left: 8.6%;
     border: 5px solid #333;
     background: none;
     padding: 5px;
@@ -54,6 +62,7 @@ const SeeCode = styled.button`
     &:hover {
         background: #333;
         color: #fff;
+        text-decoration: underline;
     }
 `
 
@@ -69,6 +78,7 @@ const SeeLive = styled.button`
     &:hover {
         background: #333;
         color: #fff;
+        text-decoration: underline;
     } 
 `
 
