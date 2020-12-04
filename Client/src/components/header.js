@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import React, { useState } from "react"
 import { motion } from "framer-motion"
-import logo from "../images/logo.svg"
+import logo from '../images/Logo.svg'
 import "../App.css"
 import "./header.css"
 import "bootstrap/dist/css/bootstrap.min.css"

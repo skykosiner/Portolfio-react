@@ -25,7 +25,7 @@ const Input = styled.input`
     }
 `
 
-const Message = styled.input`
+const Message = styled.textarea`
     border: none;
     box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
     width: 287px;
