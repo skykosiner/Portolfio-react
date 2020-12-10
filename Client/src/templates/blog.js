@@ -37,19 +37,7 @@ const Form = styled.form`
   font-size: 15px;
 `
 
-const Input = styled.input`
-  border: none;
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
-  width: 287px;
-  height: 38px;
-  margin-top: 20px;
-  transition: 0.2s ease all;
-  &:hover {
-    transform: scale(0.9);
-  }
-`
-
-const Message = styled.input`
+const Message = styled.textarea`
   border: none;
   box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
   width: 287px;
@@ -95,18 +83,11 @@ const Blog = props => {
         ></Post>
         <FromWrapper>
           <Form
-            action="https://getform.io/f/657ab555-9090-4760-bddd-816aa2c36d7a"
+            action="http://localhost:3000/feedback"
             method="POST"
           >
-            {/* --------- Name ---------- */}
-            <Input type="text" name="name" placeholder="Name: " />
-            {/* --------- Email ---------- */}
-            <br />
-            <Input type="email" name="email" placeholder="Email: " />
-            {/* --------- Subject ---------- */}
-            <br />
             {/* --------- Feedback ---------- */}
-            <Message type="text" name="message" placeholder="Feedback: " />
+            <Message type="text" name="feedback" placeholder="Feedback: " />
             {/* --------- Submit button center ---------- */}
             <SubmitCenter>
               {/* --------- Submit button ---------- */}

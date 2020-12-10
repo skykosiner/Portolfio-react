@@ -15,20 +15,16 @@ const PASS = process.env.GMAIL_PASSWORD;
 app.get("/", (req, res) => {});
 
 app.get("/contact", (req, res) => {
+  res.send("test")
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.post("/contact", urlencodedParser, function (req, res) {
-  console.log(req.body.name);
-  console.log(req.body.email);
-  console.log(req.body.message);
+  res.sendFile('./thankContact.html', { root: __dirname })
   const main = async () => {
     const transporter = nodemailer.createTransport({
-      // host: "https://outlook.office365.com/EWS/Exchange.asmx",
-      // port: 443,
-      // secure: false, // true for 465, false for other ports
       service: "gmail",
       auth: {
         user: "ykosiner@gmail.com", // generated ethereal user
@@ -52,6 +48,37 @@ Message: ${req.body.message}`,
   };
   main();
 });
+
+
+app.get("/feedback", (req,res) => {
+  res.send("test feedback")
+})
+app.post("/feedback", urlencodedParser, function (req,res) {
+  res.sendFile('./thankFeedback.html', { root: __dirname })
+  const main = async () => {
+    const transporter = nodemailer.createTransport({
+      // host: "https://outlook.office365.com/EWS/Exchange.asmx",
+      // port: 443,
+      // secure: false, // true for 465, false for other ports
+      service: "gmail",
+      auth: {
+        user: "ykosiner@gmail.com", // generated ethereal user
+        pass: PASS, // generated ethereal password
+      },
+    });
+
+    // send mail with defined transport object
+    const info = await transporter.sendMail({
+      from: '"Yoni Kosiner" <ykosiner@gmail.com>', // sender address
+      to: EMAIL_SEND, // list of receivers
+      subject: `Blog feedback`, // Subject line
+      text: `
+Feedback: ${req.body.feedback}`
+    });
+    console.log("Message sent: %s", info.messageId);
+  };
+  main();
+})
 
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`);

@@ -43,11 +43,12 @@ const LinkButton = styled.button`
   font-size: 25px;
   margin-right: 14px;
   width: 12%;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
   outline: none;
+  background: #333;
+  color: #fff;
   &:hover {
-    background: #333;
-    color: #fff;
+    transform: scale(0.7);
   }
   @media (max-width: 769px) {
     width: 50%;

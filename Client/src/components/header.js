@@ -85,9 +85,13 @@ const Inside = styled(motion.div)`
   -webkit-animation-duration: 0.2s;
   @keyframes run {
     from {
+      opacity: 0.1;
+      transform: scale(0,1);
       left: 90%;
     }
     to {
+      opacity: 1;
+      transform: scale(1);
       left: 200px;
     }
   }
