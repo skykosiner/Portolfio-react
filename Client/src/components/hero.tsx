@@ -22,7 +22,7 @@ const Description = styled.p`
 const Here = () => {
      return(
         <div>
-            <Title>Send me a message</Title>
+            <Title>Contact me</Title>
             <DescriptionWrapper>
                 <Description>Feel free to get In touch with me. <br/> About working with me on a project <br />coding productivity etc. <br/> I will respond as I soon I can.</Description>
             </DescriptionWrapper>

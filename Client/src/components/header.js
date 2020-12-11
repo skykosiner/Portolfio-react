@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import React, { useState } from "react"
 import { motion } from "framer-motion"
-import logo from '../images/Logo.svg'
+import logo from "../images/Logo.svg"
 import "../App.css"
 import "./header.css"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -86,7 +86,7 @@ const Inside = styled(motion.div)`
   @keyframes run {
     from {
       opacity: 0.1;
-      transform: scale(0,1);
+      transform: scale(0, 1);
       left: 90%;
     }
     to {
@@ -149,6 +149,9 @@ const Header = () => {
           <Link to="/projects">
             <Links>My projects</Links>
           </Link>
+          <Link to="/links">
+            <Links>Links</Links>
+          </Link>
         </Inside>
       </Center>
       <Wrapper>
@@ -168,6 +171,9 @@ const Header = () => {
           </Link>
           <Link to="/projects">
             <LinksNav>My projects</LinksNav>
+          </Link>
+          <Link to="/links">
+            <LinksNav>Links</LinksNav>
           </Link>
         </NavLinks>
       </Wrapper>

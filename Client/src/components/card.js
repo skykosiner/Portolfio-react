@@ -88,7 +88,7 @@ const Card = () => {
           <Web>Web developer & student & blogger</Web>
         </Link>
       </OutsideCard>
-      <Work to="/contact">Work with me</Work>
+      <Work to="/contact">Start your website today</Work>
     </Div>
   )
 }
