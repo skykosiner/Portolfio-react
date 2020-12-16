@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix Client",
+    "dev": "concurrently \"nodemon server.js\" \"npm start --prefix Client\""
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,12 @@
   },
   "homepage": "https://github.com/yonikosiner/Portolfio-react#readme",
   "dependencies": {
+    "babel-register": "^6.26.0",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
     "nodemailer": "^6.4.16"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^6.0.0"
   }
 }

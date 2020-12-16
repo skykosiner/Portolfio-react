@@ -166,7 +166,7 @@ const Footer = () => {
     return (
         <WrapperFooter>
             <FooterText>Designed & developed by <Br /> Yoni Kosiner ©2020</FooterText>
-            {/* Instagram */}
+            Instagram
             <InstaText>Instagram</InstaText>
             <CenterInsta>
                 <WrapperInsta>
@@ -191,16 +191,16 @@ const Footer = () => {
             <Social>
                 {/* Icons and links */}
                 <SocialLink href="https://www.instagram.com/kosiner.code">
-                    <SocialImg src={Insta}></SocialImg>
+                    {/* <SocialImg src={}></SocialImg> */}
                 </SocialLink>
                 <SocialLink href="https://twitter.com/KosinerYoni">
-                    <SocialImg style={{
-                        width: "44px",
-                        height: "44px"
-                    }} src={Twit}></SocialImg>
+                    {/* <SocialImg style={{ */}
+                        {/* width: "44px", */}
+                        {/* height: "44px" */}
+                    {/* }} src={}></SocialImg> */}
                 </SocialLink>
                 <SocialLink href="https://github.com/yonikosiner">
-                    <SocialImg src={Git}></SocialImg>
+                    {/* <SocialImg src={}></SocialImg> */}
                 </SocialLink>
             </Social>
             {/* About me */}

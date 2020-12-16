@@ -17,7 +17,6 @@ const OutsideCard = styled.div`
   border-radius: 4%;
   transition: all 0.3s ease;
   @media (min-width: 1080px) {
-    bottom: 50%;
     width: 385px;
     height: 396px;
   }
@@ -62,7 +61,7 @@ const Work = styled(Link)`
   padding: 5px;
   transition: 0.2s ease all;
   color: #000;
-  bottom: 40%;
+  bottom: 30%;
   &:hover {
     color: #fff;
     background-color: #333333;
