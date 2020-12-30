@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Header from "./header"
 import Footer from "./footer"
 import GlobalStyle from "./globalStyles"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
 
 const Layout = ({ children }) => {

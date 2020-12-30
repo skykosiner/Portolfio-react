@@ -2,17 +2,17 @@ import React from "react"
 // Components
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from '../components/card'
+import { Intro } from "../components/intro"
 
 const IndexPage = () => {
-  return(
+  return (
     <Layout>
       <SEO title="Home" />
       <div id="all">
-        <Card />
+        <Intro />
       </div>
     </Layout>
   )
 }
 
-export default IndexPage;
+export default IndexPage

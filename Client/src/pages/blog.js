@@ -8,16 +8,12 @@ import "../App.css"
 const Blog = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark {
+      allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
         edges {
           node {
-            frontmatter {
-              title
-              date
-            }
-            fields {
-              slug
-            }
+            title
+            slug
+            publishedDate(formatString: "MMMM Do, YYYY")
           }
         }
       }
@@ -68,19 +64,19 @@ const Blog = () => {
     <Layout>
       <Title>Blog</Title>
       <List>
-        {data.allMarkdownRemark.edges.map(edge => {
+        {data.allContentfulBlogPost.edges.map(edge => {
           return (
             <Link
-              key={edge.node.frontmatter.title}
+              key={edge.node.title}
               style={{
                 textDecoration: "none",
                 color: "#3C3C3C",
                 textAlign: "center",
               }}
-              to={`/blog/${edge.node.fields.slug}`}
+              to={`/blog/${edge.node.slug}`}
             >
-              <Post key={edge.node.frontmatter.title}>
-                <BlogTitle>{edge.node.frontmatter.title}</BlogTitle>
+              <Post key={edge.node.title}>
+                <BlogTitle>{edge.node.title}</BlogTitle>
                 <p
                   style={{
                     position: "absolute",
@@ -88,7 +84,7 @@ const Blog = () => {
                     marginLeft: "10px",
                   }}
                 >
-                  {edge.node.frontmatter.date}
+                  {edge.node.date}
                 </p>
               </Post>
             </Link>

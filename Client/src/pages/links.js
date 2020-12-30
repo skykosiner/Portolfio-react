@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
 // Images
-import me from "../images/me.jpg"
+import yoni from "../images/Yoni.jpg"
 
 // TItle
 const TItle = styled.h1`
@@ -88,7 +88,7 @@ const Link = () => {
       <TItle>Links</TItle>
       {/* Image */}
       <Image>
-        <img src={me} alt="" />
+        <img src={yoni} alt="" />
       </Image>
       {/* Links button */}
       <Links>

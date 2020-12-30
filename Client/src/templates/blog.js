@@ -1,19 +1,22 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import styled from "styled-components"
 import "../App.css"
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      frontmatter {
-        title
+    contentfulBlogPost(slug: { eq: $slug }) {
+      title
+      publishedDate(formatString: "MMMM Do, YYYY")
+      body {
+        raw
       }
-      html
     }
   }
 `
+
 const Body = styled.div`
   display: flex;
   justify-content: center;
@@ -77,15 +80,15 @@ const Blog = props => {
   return (
     <Layout id="all">
       <Body>
-        <Title>{props.data.markdownRemark.frontmatter.title}</Title>
+        <Title>{props.data.contentfulBlogPost.title}</Title>
         <Post
-          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+          dangerouslySetInnerHTML={{
+            __html: props.data.contentfulBlogPost.body.raw,
+          }}
         ></Post>
+        <Post>{props.data.contentfulBlogPost.publishedDate}</Post>
         <FromWrapper>
-          <Form
-            action="http://localhost:3000/feedback"
-            method="POST"
-          >
+          <Form action="http://localhost:3000/feedback" method="POST">
             {/* --------- Feedback ---------- */}
             <Message type="text" name="feedback" placeholder="Feedback: " />
             {/* --------- Submit button center ---------- */}
