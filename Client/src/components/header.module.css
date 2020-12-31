@@ -1,0 +1,15 @@
+#menu-show {
+  transition: 0.2s ease all;
+  display: block;
+}
+
+.links {
+  float: right;
+  list-style: none;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+/* @media (max-width: 768px) {
+  display: none;
+} */

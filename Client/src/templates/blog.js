@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-// import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import styled from "styled-components"
 import "../App.css"
 
@@ -86,7 +85,6 @@ const Blog = props => {
             __html: props.data.contentfulBlogPost.body.raw,
           }}
         ></Post>
-        <Post>{props.data.contentfulBlogPost.publishedDate}</Post>
         <FromWrapper>
           <Form action="http://localhost:3000/feedback" method="POST">
             {/* --------- Feedback ---------- */}
