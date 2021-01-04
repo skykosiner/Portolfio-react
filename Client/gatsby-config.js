@@ -6,8 +6,9 @@ const SPACE_ID = process.env.SPACE_ID
 module.exports = {
   siteMetadata: {
     title: `Yoni Kosiner`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Yoni Kosiner Portfolio`,
     author: `Yoni Kosiner`,
+    image: `https://kosiner.codes/static/media/Logo.f8c38dee.svg`,
   },
 
   plugins: [

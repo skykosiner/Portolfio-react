@@ -13,3 +13,8 @@
 /* @media (max-width: 768px) {
   display: none;
 } */
+.head {
+}
+.head > img {
+  width: 20%;
+}

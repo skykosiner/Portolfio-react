@@ -1,20 +1,43 @@
 .border {
-  margin: 20% auto;
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
-  width: 43%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
 .img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 5rem;
+}
+.img > img {
+  border-radius: 50%;
   width: 200px;
-  border-radius: 10%;
-  margin-top: 5%;
+  height: 200px;
 }
 .h1 {
-  font-size: 30px;
-  font-weight: 700;
   text-align: center;
+  font-weight: 700;
+}
+.p {
+  text-align: center;
+  font-weight: 600;
+}
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work > a {
+  cursor: pointer;
+  border: none;
+  background: #333;
+  transition: 0.2s ease all;
+  padding: 10px 10px;
+}
+.work:focus {
+  border: 2px solid #fff;
+}
+.work > a:hover {
+  background: #5e5e5e;
 }

@@ -17,8 +17,7 @@ const Image = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    height: 242px;
-    width: 154.5px;
+    height: 15rem;
     border-radius: 20px;
   }
 `
