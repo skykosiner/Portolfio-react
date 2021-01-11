@@ -1,12 +1,16 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "gatsby"
 
 export const Footer = () => {
   return (
     <div className="bg-dark text-white fixed-bottom">
       <div className="text-center">
         <h3 className="font-weight-normal">
-          &copy;{new Date().getFullYear()} Yoni Kosiner
+          &copy;{new Date().getFullYear()}{" "}
+          <Link style={{ color: "#fff" }} to="/">
+            Yoni Kosiner
+          </Link>
         </h3>
       </div>
       <div className="d-flex justify-content-center">
@@ -30,6 +34,9 @@ export const Footer = () => {
           target=" _blank"
         >
           GitHub
+        </a>
+        <a className="ml-3 text-white" href="mailto:yoni@kosiner.co.uk">
+          Email
         </a>
       </div>
     </div>

@@ -3,6 +3,9 @@
   display: block;
 }
 
+.border {
+  background-color: var(--color-bg-primary);
+}
 .links {
   float: right;
   list-style: none;
@@ -14,7 +17,18 @@
   display: none;
 } */
 .head {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
 }
 .head > img {
   width: 20%;
+  transform: scale(1.8);
+}
+
+#headColor {
+  background-color: var(--color-nav-bg) !important;
+}
+#linkColor {
+  color: var(--color-text-primary) !important;
 }

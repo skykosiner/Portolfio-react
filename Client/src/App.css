@@ -3,3 +3,31 @@
 body {
   overflow-x: hidden;
 }
+html {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+.dark {
+  --color-bg-primary: #2d3748;
+  --color-bg-secondary: #283141;
+  --color-text-primary: #f7fafc;
+  --color-text-secondary: #e2e8f0;
+  --color-text-accent: #81e6d9;
+  --color-bt-primary: #fff;
+  --color-bt-text-primary: #333;
+  --color-btn-hover: #333;
+  --color-nav-bg: #3b4558;
+}
+
+.light {
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #edf2f7;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #4a5568;
+  --color-text-accent: #2b6cb0;
+  --color-bt-primary: #333;
+  --color-btn-hover: rgb(221, 215, 215);
+  --color-bt-text-primary: #fff;
+  --color-nav-bg: #c5c4c4;
+}

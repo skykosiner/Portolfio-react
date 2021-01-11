@@ -18,7 +18,7 @@ const Image = styled.div`
   align-items: center;
   img {
     height: 15rem;
-    border-radius: 20px;
+    border-radius: 50%;
   }
 `
 // Links button
@@ -41,7 +41,7 @@ const LinkButton = styled.button`
   padding: 5px;
   font-size: 25px;
   margin-right: 14px;
-  width: 12%;
+  width: 15%;
   transition: all 0.2s ease;
   outline: none;
   background: #333;

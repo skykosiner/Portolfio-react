@@ -13,7 +13,7 @@ export const Intro = () => {
       <h1 className={styled.h1}>Hello my name is Yoni Kosiner!</h1>
       <p className={styled.p}>Self taught web developer.</p>
       <div className={styled.work}>
-        <Link to="/contact" style={{ color: "#fff" }}>
+        <Link className={styled.btn} to="/contact">
           Contact me
         </Link>
       </div>

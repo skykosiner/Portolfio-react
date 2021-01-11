@@ -1,21 +1,32 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useContext } from "react"
 import logo from "../images/Logo.svg"
 import "bootstrap/dist/css/bootstrap.min.css"
 import style from "./header.module.css"
 import useWindowSize from "../hooks/useWindowSize"
 import HamburgerMenu from "react-hamburger-menu"
+import Toggle from "./toggle"
+import { ThemeContext } from "../theme/themeContext"
 
 export const Header = ({ isOpen, setIsOpen }) => {
+  const { theme, setTheme } = useContext(ThemeContext)
+
+  const isDark = () => {
+    return theme === "dark"
+  }
   const handleClick = () => {
     setIsOpen(!isOpen)
   }
   const size = useWindowSize()
   return (
     <div>
+      <Toggle />
       {/* Check to see if size is bigger then 1025px */}
       {size.width > 1025 && (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav
+          id={style.headColor}
+          className={`navbar navbar-expand-lg navbar-light bg-light`}
+        >
           <div className="container-fluid">
             <div className={style.head}>
               <img className="navbar-brand" src={logo} alt="Logo" />
@@ -33,12 +44,19 @@ export const Header = ({ isOpen, setIsOpen }) => {
             </button>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/" style={{ cursor: "pointer" }} className="nav-link">
+                <Link
+                  id={style.linkColor}
+                  to="/"
+                  style={{ cursor: "pointer" }}
+                  className="nav-link"
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
+                  id={style.linkColor}
+                  j
                   to="/contact"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
@@ -48,6 +66,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
               </li>
               <li className="nav-item">
                 <Link
+                  id={style.linkColor}
                   to="/about"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
@@ -57,6 +76,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
               </li>
               <li className="nav-item">
                 <Link
+                  id={style.linkColor}
                   to="/blog"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
@@ -66,6 +86,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
               </li>
               <li className="nav-item">
                 <Link
+                  id={style.linkColor}
                   to="/links"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
