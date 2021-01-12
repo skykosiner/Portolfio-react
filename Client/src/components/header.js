@@ -20,7 +20,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
   const size = useWindowSize()
   return (
     <div>
-      <Toggle />
+      <Toggle theme={theme} />
       {/* Check to see if size is bigger then 1025px */}
       {size.width > 1025 && (
         <nav
