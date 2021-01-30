@@ -1,0 +1,12 @@
+.main {
+  margin: 5rem;
+  font-size: 27px;
+  text-align: justify;
+  color: var(--color-text-primary);
+}
+
+@media only screen and (max-width: 1025px) {
+  .main {
+    margin: 2rem;
+  }
+}

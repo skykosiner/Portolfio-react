@@ -1,0 +1,33 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.found {
+  background: var(--color-post);
+  border: 0.5px solid var(--color-border);
+  margin-top: 32px;
+  border-radius: 5px;
+  padding: 32px;
+  width: 40%;
+}
+
+.post {
+  background: var(--color-post);
+  border: 0.5px solid var(--color-border);
+  margin-top: 32px;
+  border-radius: 5px;
+  padding: 32px;
+  width: 40%;
+}
+
+.parentpost {
+  display: flex;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}

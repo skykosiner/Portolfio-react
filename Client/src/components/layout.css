@@ -595,3 +595,8 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.out {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}

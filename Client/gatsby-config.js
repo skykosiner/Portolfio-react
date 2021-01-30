@@ -45,6 +45,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `http://localhost:2368`,
+        contentApiKey: `bf3f4f848a82f05fc193f0496c`,
+        version: `v3`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,

@@ -7,21 +7,28 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./layout.css"
 import { Menu } from "./menu"
 import { ThemeProvider } from "../theme/themeContext"
+import { ThemeContext } from "../theme/themeContext"
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false)
-  // Check if user had been on here before and has been on darkmode check if os is in darkmode
+  // const { theme, setTheme } = useContext(ThemeContext)
+
+  // const isDark = () => {
+  //   return theme === "dark"
+  // }
 
   return (
-    <ThemeProvider>
-      <GlobalStyle />
-      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-      {isOpen && <Menu />}
-      <div>
-        <main>{children}</main>
-      </div>
-      <Footer />
-    </ThemeProvider>
+    <div>
+      <ThemeProvider>
+        <GlobalStyle />
+        <Header isOpen={isOpen} setIsOpen={setIsOpen} />
+        {isOpen && <Menu />}
+        <main style={{ minHeight: "calc(100vh - 158px - 90px)" }}>
+          {children}
+        </main>
+        <Footer />
+      </ThemeProvider>
+    </div>
   )
 }
 

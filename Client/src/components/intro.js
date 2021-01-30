@@ -10,10 +10,10 @@ export const Intro = () => {
       <div className={styled.img}>
         <img src={yoni} alt="" />
       </div>
-      <h1 className={styled.h1}>Hello my name is Yoni Kosiner!</h1>
+      <h1 className={styled.h1}>Hello my name is Yoni Kosiner</h1>
       <p className={styled.p}>Self taught web developer.</p>
       <div className={styled.work}>
-        <Link className={styled.btn} to="/contact">
+        <Link style={{ color: "#fff" }} className={styled.btn} to="/contact">
           Contact me
         </Link>
       </div>

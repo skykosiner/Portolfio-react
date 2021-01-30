@@ -2,42 +2,65 @@
 
 body {
   overflow-x: hidden;
+  background-color: var(--color-bg-primary);
 }
 html {
   background-color: var(--color-bg-primary);
   color: var(--color-text-primary);
 }
 
+a {
+  color: var(--color-text-primary);
+}
+
+a:hover {
+  color: #ec4646 !important;
+}
+
 .dark {
-  --color-bg-primary: #2d3748;
-  --color-bg-secondary: #283141;
+  --color-bg-primary: #333;
+  --color-bg-secondary: #3e3e3e;
   --color-text-primary: #f7fafc;
   --color-text-secondary: #e2e8f0;
   --color-text-accent: #81e6d9;
-  --color-bt-primary: #fff;
+  --color-bt-primary: #ec4646;
+  --color-bt-primary-hover: #ec4646;
   --color-bt-text-primary: #333;
   --color-btn-hover: #333;
-  --color-nav-bg: #3b4558;
+  --color-nav-bg: #4e4e4e;
+  --color-btn-text: #ffff;
+  --color-card-primary: #333;
+  --color-border: #525253;
+  --color-post: #4e4e4e;
 }
 
 .light {
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #edf2f7;
-  --color-text-primary: #2d3748;
-  --color-text-secondary: #4a5568;
+  --color-bg-primary: #f0f3f5;
+  --color-bg-secondary: rgb(226, 225, 225);
+  --color-text-primary: #687385;
+  --color-text-secondary: #000;
   --color-text-accent: #2b6cb0;
+  --color-bt-primary-hover: #ec4646;
   --color-bt-primary: #333;
   --color-btn-hover: rgb(221, 215, 215);
   --color-bt-text-primary: #fff;
   --color-nav-bg: #c5c4c4;
+  --color-btn-text: #fff;
+  --color-card-primary: #fff;
+  --color-border: #eaecee;
+  --color-post: #fff;
 }
 .switch {
   position: relative;
   display: inline-block;
-  left: 303%;
-  margin-top: 20%;
+  right: -89.3rem;
+  margin-top: 30%;
   width: 60px;
   height: 34px;
+  transition: all 1s ease;
+}
+.switch:hover {
+  transform: scale(1.1);
 }
 
 .switch input {
@@ -59,11 +82,11 @@ html {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #ec4646;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #c44141;
 }
 
 input:checked + .slider:before {
@@ -79,4 +102,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.mobile-br {
+  display: none;
+}
+@media only screen and (max-width: 1025px) {
+  .mobile-br {
+    display: block;
+  }
 }

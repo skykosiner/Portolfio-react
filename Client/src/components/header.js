@@ -19,7 +19,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
   }
   const size = useWindowSize()
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <Toggle theme={theme} />
       {/* Check to see if size is bigger then 1025px */}
       {size.width > 1025 && (
@@ -50,13 +50,12 @@ export const Header = ({ isOpen, setIsOpen }) => {
                   style={{ cursor: "pointer" }}
                   className="nav-link"
                 >
-                  Home
+                  Home ️
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   id={style.linkColor}
-                  j
                   to="/contact"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
@@ -67,6 +66,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
               <li className="nav-item">
                 <Link
                   id={style.linkColor}
+                  j
                   to="/about"
                   style={{ cursor: "pointer" }}
                   className="nav-link"
@@ -74,7 +74,7 @@ export const Header = ({ isOpen, setIsOpen }) => {
                   About
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   id={style.linkColor}
                   to="/blog"
@@ -82,6 +82,16 @@ export const Header = ({ isOpen, setIsOpen }) => {
                   className="nav-link"
                 >
                   Blog
+                </Link>
+              </li> */}
+              <li className="nav-item">
+                <Link
+                  id={style.linkColor}
+                  to="/projects"
+                  style={{ cursor: "pointer" }}
+                  className="nav-link"
+                >
+                  Projects
                 </Link>
               </li>
               <li className="nav-item">
@@ -112,10 +122,9 @@ export const Header = ({ isOpen, setIsOpen }) => {
               height={20}
               strokeWidth={1}
               rotate={0}
-              color="black"
+              color="#ec4646"
               borderRadius={0}
               animationDuration={0.5}
-              className="burger"
             />
           </div>
         </nav>

@@ -7,6 +7,8 @@ const FromWrapper = styled.div`
   display: flex;
   justify-content: center;
   font-family: "Roboto", sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
 `
 
 const Form = styled.form`
@@ -15,55 +17,52 @@ const Form = styled.form`
 
 const Input = styled.input`
   border: none;
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
   width: 287px;
   height: 38px;
   margin-top: 20px;
   transition: 0.2s ease all;
+  border: 1px solid #eaecee;
   &:hover {
-    transform: scale(0.9);
-  }
-  @media (max-width: 1025px) {
-    background-color: #f0f0f0;
+    transform: scale(1.1);
   }
 `
 
 const Message = styled.textarea`
   border: none;
-  box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
   width: 287px;
   height: 185px;
   margin-top: 20px;
   transition: 0.2s ease all;
+  border: 1px solid #eaecee;
   &:hover {
     transform: scale(1.1);
-  }
-  @media (max-width: 1025px) {
-    background-color: #f0f0f0;
   }
 `
 
 const SubmitCenter = styled.div`
   display: flex;
   justify-content: center;
+  height: 17%;
   z-index: 99;
 `
-const Submit = styled.button`
-  margin: 20px;
-  border: none;
-  text-align: center;
-  color: #000;
-  border: 5px solid #5b6267;
-  transition: 0.2s ease all;
-  box-shadow: 20px 10px 100px rgba(0, 0, 0, 0.1);
-  &:hover {
-    color: #fff;
-    background-color: #5b6267;
-    transform: scale(1.2);
+const Submit = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  button {
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--color-bt-primary);
+    transition: 0.2s ease all;
+    padding: 10px 10px;
+    color: var(--color-btn-text);
   }
-  @media (max-width: 769px) {
-    background-color: #5b6267;
-    color: #fff;
+  button:hover {
+    background: var(--color-btn-hover);
+    color: var(--color-bt-primary-hover);
+    text-decoration: underline;
   }
 `
 
@@ -85,8 +84,10 @@ const ContactForm = () => {
         {/* --------- Submit button center ---------- */}
         <SubmitCenter>
           {/* --------- Submit button ---------- */}
+          <Submit>
+            <button>Submit</button>
+          </Submit>
           <br />
-          <Submit type="submit">Send</Submit>
         </SubmitCenter>
       </Form>
     </FromWrapper>

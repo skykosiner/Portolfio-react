@@ -31,4 +31,9 @@
 }
 #linkColor {
   color: var(--color-text-primary) !important;
+  font-weight: 700;
+}
+
+#linkColor:hover {
+  color: #ec4646 !important;
 }

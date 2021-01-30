@@ -8,7 +8,7 @@ import yoni from "../images/Yoni.jpg"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home page" description="yoni kosiner portfolio" image={yoni} />
+    <SEO title="🏠️ Home" description="yoni kosiner portfolio" image={yoni} />
     <Intro />
   </Layout>
 )

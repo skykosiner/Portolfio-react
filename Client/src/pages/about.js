@@ -9,10 +9,7 @@ import SEO from "../components/seo"
 const About = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta description="Yoni Kosiner Portfolio | About" />
-      </Helmet>
-      <SEO title="About" description="Yoni Kosiner Portfolio | About" />
+      <SEO title="🧑️ About" description="Yoni Kosiner Portfolio | About" />
       <AboutHero />
       <AboutDesc />
     </Layout>

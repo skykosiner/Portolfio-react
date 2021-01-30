@@ -1,71 +1,76 @@
 import React from "react"
-import { Card, Button } from "react-bootstrap"
-import { Portfolio, LifeCoverInTrust, MovieList } from "../data/projectsData"
-import "bootstrap/dist/css/bootstrap.min.css"
 import styled from "styled-components"
-import lifeCoverImg from "../images/lifeCover.png"
-import portfolioImg from "../images/portfolio.svg"
-
-const Title = styled.h1`
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  margin-top: 20px;
-`
-
-const CardContainer = styled(Card)`
-  width: 18rem;
-  height: 26rem;
-  cursor: pointer;
-  transition: 0.2s ease all;
-  text-align: center;
-  &:hover {
-    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.1);
-  }
-`
-const Cards = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px 10px;
-`
+import "bootstrap/dist/css/bootstrap.min.css"
+import style from "../styles/project.module.css"
+import { Link } from "gatsby"
 
 export const Projects = () => {
   return (
-    <>
-      <Title>Projects</Title>
-      <div className="d-flex flex-row justify-content-center">
-        <Cards>
-          <CardContainer>
-            <Card.Img src={portfolioImg} />
-            <Card.Body className="d-flex flex-column-reverse">
-              <Card.Title>{Portfolio.name}</Card.Title>
-              <Card.Text className="text-justify">{Portfolio.desc}</Card.Text>
-              <Button className="mr-3 mt-auto">See Code</Button>
-              <Button className="mt-auto">See Live</Button>
-            </Card.Body>
-          </CardContainer>
-          <CardContainer>
-            <Card.Img src={lifeCoverImg} />
-            <Card.Body>
-              <Card.Title>{LifeCoverInTrust.name}</Card.Title>
-              <Card.Text className="text-justify">
-                {LifeCoverInTrust.desc}
-              </Card.Text>
-              <Button className="mr-3">See Code</Button>
-              <Button>See Live</Button>
-            </Card.Body>
-          </CardContainer>
-          <CardContainer>
-            <Card.Img src={portfolioImg} />
-            <Card.Body>
-              <Card.Title>{MovieList.name}</Card.Title>
-              <Card.Text className="text-justify">{MovieList.desc}</Card.Text>
-              <Button className="mr-3">See code</Button>
-              <Button>See live</Button>
-            </Card.Body>
-          </CardContainer>
-        </Cards>
+    <div className="position-absolute" style={{ width: "100%" }}>
+      {/* Title for projects page */}
+      <h1
+        className="text-center"
+        style={{ fontSize: "55px", color: "var(--color-text-secondary)" }}
+      >
+        Projects
+      </h1>
+      {/* All projects */}
+      <div
+        className="d-flex flex-row justify-content-center align-items-cetner"
+        style={{ width: "100%" }}
+      >
+        {/* Portoflio project */}
+        <Link id={style.card} className={style.link} to="/">
+          <div
+            className="d-flex justify-content-center flex-column align-items-center"
+            style={{
+              width: "15rem",
+              background: "var(--color-card-primary)",
+              border: "1px solid var(--color-border)",
+              marginRight: "50px",
+            }}
+          >
+            <h2 style={{ color: "var(--color-text-secondary)" }}>Portfolio</h2>
+            <p className="text-justify" style={{ padding: "10px 10px" }}>
+              My portfolio website is where you can find my blog see my projects
+              and learn more about me
+            </p>
+          </div>
+        </Link>
+        <div className={style.break}></div>
+        {/* Movie app project */}
+        <a className={style.link} href="#">
+          <div
+            className="d-flex justify-content-center flex-column align-items-center"
+            style={{
+              width: "15rem",
+              background: "var(--color-card-primary)",
+              border: "1px solid var(--color-border)",
+              marginRight: "50px",
+            }}
+          >
+            <h2 style={{ color: "var(--color-text-secondary)" }}>Movie app</h2>
+            <p className="text-justify" style={{ padding: "10px 10px" }}>
+              On this website i used the imbd api in order to get the top 50
+              films of all time and be able to search though any film
+            </p>
+          </div>
+        </a>
+        <div className={style.break}></div>
+        {/* Life cover in trust project */}
+        <div
+          className="d-flex justify-content-center flex-column align-items-center"
+          style={{
+            width: "15rem",
+            background: "var(--color-card-primary)",
+            border: "1px solid var(--color-border)",
+          }}
+        >
+          <h2 style={{ color: "var(--color-text-secondary)" }}>
+            Life Cover In Trust
+          </h2>
+        </div>
       </div>
-    </>
+    </div>
   )
 }
